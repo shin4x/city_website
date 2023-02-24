@@ -1,0 +1,98 @@
+.grid * {
+	box-sizing: border-box;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 30px;
+	margin: 3%;
+}
+/* Кол-во блоков на разных экранах */
+@media only screen and (max-width: 1200px) {
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
+.grid-item {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.3s;
+	border-radius: 50px;
+	background: #ffffff;
+	box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+	padding: 30px;
+}
+.grid-item .image {
+	height: 200px;
+	overflow: hidden;
+	border-radius: 30px;
+}
+.grid-item .info {
+	position: relative;
+	height: calc(100% - 200px);
+	padding: 16px 14px 80px 14px;
+}
+.grid-item:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+}
+.grid-item .image img {
+	transition: transform 280ms ease-in-out;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.grid-item:hover .image img {
+	transform: scale(1.1);
+}
+.info h2 {
+	color: #5e5e5e;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+	text-align: center;
+}
+.info-text p {
+	font-size: 15px;
+	line-height: 20px;
+
+	margin-bottom: 10px;
+}
+
+.grid-item .button-wrap {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 14px;
+	left: 0;
+	text-align: center;
+}
+/* Кнопка подробнее */
+.atuin-btn {
+	margin: 10px 20px 10px 20px;
+	padding: 10px;
+	color: rgb(100, 100, 100);
+	border-radius: 50px;
+	background: #ffffff;
+	box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+	padding: 30px;
+	text-decoration: none;
+
+	position: relative;
+	left: 40%;
+	top: 30px;
+}
+.atuin-btn:hover {
+	transition: 0.7s;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+}

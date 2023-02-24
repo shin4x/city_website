@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c210fe21-591a-4d63-be8a-394a3c2d0359" name="goldobin.mentor4u.ru" url="http://goldobin.mentor4u.ru">
+        <fileTransfer rootFolder="/goldobin" host="ftp60.hostland.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

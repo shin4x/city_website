@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/news.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="box">
+                <div class="header-section">
+                    <div class=" box">
+                        <h1 class="h1"> Городской портал "Сделаем лучше вместе !" </h1>
+                    </div>
+                </div>
+
+
+                <div class="header-section">
+
+                    <div class="box">
+
+                        <ul class="button-vertical-container">
+                            <a href="index.html">
+                                <div class="box header-button">
+                                    <li>Главная</li>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box header-button">
+                                    <li>Новости</li>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box header-button">
+                                    <li>Контакты</li>
+                                </div>
+                            </a>
+                            <a href="auth.html">
+                                <div class="dn box header-button" id="login_or_signup">
+                                    <li>Вход/Регистрация </li>
+                                </div>
+                            </a>
+                            <a href="user_dashboard.html">
+                                <div class="dn box header-button" id="user_page">
+                                    <li id="user_header">Личный кабинет </li>
+                                </div>
+                            </a>
+
+                        </ul>
+
+                    </div>
+                </div>
+        </header>
+
+
+
+        <main>
+
+            <div class=" box request-container">
+
+                <!--  action="/BACK/PHP/auth.php" method="post"-->
+                <form id="reg_form">
+                    <h2 class="h1">Регистрация пользователя </h2>
+
+                    <label for="mail">
+                        <div class="box">
+
+                            <p> Почта</p>
+                            <input type="text" class="type-2 mail" id="mail" name="mail" />
+                        </div>
+                    </label>
+
+                    <label for="mail">
+                        <div class="box">
+
+                            <p> Телефон</p>
+                            <input type="number" class="type-2 number" id="number" name="mail" />
+                        </div>
+                    </label>
+
+                    <label for="login">
+                        <div class="box">
+
+                            <p> Логин</p>
+                            <input type="text" class="type-2 login" id="login" name="login" />
+                        </div>
+                    </label>
+
+                    <label for="password">
+                        <div class="box">
+
+                            <p> Пароль</p>
+                            <input type="password" class="type-2 password" id="password" name="password" />
+                        </div>
+                    </label>
+
+                    <label for="password2">
+                        <div class="box">
+
+                            <p> Повторите пароль</p>
+                            <input type="password" class="type-2 password2" id="password2" name="password2" />
+                        </div>
+                    </label>
+
+
+
+
+
+                    <div class="half">
+                        <div class="header-section">
+
+
+
+                            <ul class="button-vertical-container">
+
+                                <li> <a href="auth.html">
+                                        <div class="box header-button">Назад</div>
+                                    </a> </li>
+                                <li>
+                                    <button type="submit">
+                                        <div class="box header-button">Зарегистрироваться</div>
+                                    </button>
+                                </li>
+                                <li> <button type="reset">
+                                        <div class="box header-button">Отчистить</div>
+                                    </button> </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </main>
+        <footer>
+            футер
+        </footer>
+
+    </div>
+    <script src="/FRONT/JS/index.js"></script>
+    <script src="/FRONT/JS/header_username.js"></script>
+    <script src=../JS/if_localstorage_zero.js></script>
+</body>
+
+</html>

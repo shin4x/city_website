@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/news.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="box">
+                <div class="header-section">
+                    <div class=" box">
+                        <h1 class="h1"> Городской портал "Сделаем лучше вместе !" </h1>
+                    </div>
+                </div>
+
+
+                <div class="header-section">
+
+                    <div class="box">
+
+                        <ul class="button-vertical-container">
+                            <a href="index.html">
+                                <div class="box header-button">
+                                    <li>Главная</li>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box header-button">
+                                    <li>Новости</li>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box header-button">
+                                    <li>Контакты</li>
+                                </div>
+                            </a>
+                            <a href="auth.html">
+                                <div class="dn box header-button" id="login_or_signup">
+                                    <li>Вход/Регистрация </li>
+                                </div>
+                            </a>
+                            <a href="index.html">
+                                <div class="box header-button" id="end_session">
+                                    <li>Выйти</li>
+                                </div>
+                            </a>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+        </header>
+        <main>
+            <h2 class="h1">Личный кабинет пользователя</h2>
+            <div class=" box user_block">
+
+
+
+                <article class=" box user_info">
+
+                    <div class="image">
+                        <img src="/ZADANIE1.1/img/1.jpg" />
+                    </div>
+
+                    <div class="info">
+                        <div class=" user_info">
+                            <ul>
+                                <li>
+                                    <p>Имя пользователя</p>
+                                </li>
+                                <li>
+                                    <p id="user_header">Логин пользователя:</p>
+                                </li>
+                                <li>
+                                    <p>Почта пользователя</p>
+                                </li>
+                                <li> <a href="#">
+                                        <div class="user_btn_info_edit" href="#link">Изменить</div>
+                                    </a href="#"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </article>
+
+
+                <article>
+
+                    <div class="box push_request">
+                        <div class="push_request_header">
+                            <p>Подать заявку</p>
+                        </div>
+                        <div class="addit_info">
+                            <p>Для составления заявки вам необходимо зарегистрироваться</p>
+                        </div>
+                        <div class="request_name"> Введите название новости</div>
+                        <input type="text">
+
+                        <div class="request_disc"> Введите описание новости</div>
+                        <input type="text">
+
+                        <div>Выберите категорию</div>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option5< /option>
+                        </select>
+
+                        <p>Прикрепите изображения (опционально)</p>
+                        <input type="file">
+
+                        <div class="button-wrap">
+                            <a class="atuin-btn" href="#link">Отправить</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+
+
+
+        </main>
+        <footer>
+            футер
+        </footer>
+
+    </div>
+    <script src="/FRONT/JS/header_username.js"></script>
+    <script src="../JS/user.js"></script>
+    <script src=../JS/end_session.js></script>
+    <script src=../JS/if_localstorage_zero.js></script>
+
+</body>
+
+</html>
